@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+:root
+{
+    --primary-color: #42d5e9;
+    --dark-color: #333333;
+    --light-color: #f4f4f4;
+    --lose-color: #dc3545;
+    --win-color: #21a39f;
+    --modal-duration: 1s;
+
+}
+
+*
+{
+    box-sizing: corder-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body
+{
+    font-family: 'Righteous',sans-serif;
+    line-height: 1.6;
+    background: rgb(255, 255, 255);
+    color: #333;
+}
+
+.container
+{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.restart-btn
+{
+    display: none;
+    background: var(--light-color);
+    color: #333;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.restart-btn
+{
+   background: var(--primary-color);
+   color: #fff; 
+}
+
+.header
+{
+    text-align: center;
+    margin: 1rem 0;
+
+}
+.header h1{
+    margin-bottom: 1rem; 
+}
+
+.score
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.score p:first-child
+{
+    background: var(--primary-color);   
+}
+
+.score p:last-child
+{
+    background: var(--dark-color);   
+}
+
+.choices
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.choice
+{
+    cursor: pointer;
+}
+
+.choice:hover
+{
+   color: #3a8b3a; 
+}
