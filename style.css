@@ -7,7 +7,7 @@
     --light-color: #f4f4f4;
     --lose-color: #dc3545;
     --win-color: #21a39f;
-    --modal-duration: 1s;
+    
 
 }
 
@@ -98,4 +98,36 @@ body
 .choice:hover
 {
    color: #3a8b3a; 
+}
+
+.text-win
+{
+    color: var(--win-color);
+
+}
+.text-lose
+{
+    color: var(--lose-color);
+    
+}
+
+@media(max-width: 700px)
+{
+    .choice{
+        font-size:110px;
+    }
+}
+
+@media(max-width: 500px)
+{
+    .choice{
+        font-size:80px;
+    }
+}
+
+@media(max-width: 300px)
+{
+    .choice{
+        font-size:50px;
+    }
 }
