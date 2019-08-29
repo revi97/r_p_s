@@ -2,6 +2,7 @@
 {
 --modal-duration: 1s;
 }
+
 .modal
 {
     display: none;
@@ -15,7 +16,8 @@
     background: rgba(0, 0, 0, 0.6);
 }
 
-.modal-content
+/*  Main box design */
+.modal_content
 {
     background: #ffffff;
     text-align: center;
@@ -28,18 +30,121 @@
     animation-duration: var(--modal-duration); 
 }
 
-.modal-content h1{
+.modal_content h1{
     margin-bottom: 1rem;
 
 }
 
-.modal-content p
+.modal_content p
 {
-    font-size: 1.3rem;
+    font-size: 1.2rem; 
     margin-top: 1rem;
 }
 
+/* Bigger window */
 
+@media(max-width: 700px)
+{
+    .modal_content{
+        font-size:110px;
+    }
+}
+
+@media(max-width: 700px)
+{
+    .text-win{
+        font-size:80px;
+    }
+}
+@media(max-width: 700px)
+{
+    .text-lose{
+        font-size:80px;
+    }
+}
+@media(max-width: 700px)
+{
+    .far{
+        font-size:110px;
+    }
+}
+@media(max-width: 700px)
+{
+    .draw{
+        font-size:80px;
+    }
+}
+
+/* Medium window */
+
+@media(max-width: 500px)
+{
+    .modal_content{
+        font-size:50px;
+    }
+}
+
+@media(max-width: 500px)
+{
+    .text-win{
+        font-size:50px;
+    }
+}
+@media(max-width: 500px)
+{
+    .text-lose{
+        font-size:50px;
+    }
+}
+
+@media(max-width: 500px)
+{
+    .far{
+        font-size:80px;
+    }
+}
+@media(max-width: 500px)
+{
+    .draw{
+        font-size:50px;
+    }
+}
+
+/* Smaller window */
+@media(max-width: 300px)
+{
+    .modal_content{
+        font-size:30px;
+    }
+}
+
+@media(max-width: 300px)
+{
+    .text-win{
+        font-size:30px;
+    }
+}
+@media(max-width: 300px)
+{
+    .text-lose{
+        font-size:30px;
+    }
+}
+
+@media(max-width: 300px)
+{
+    .far{
+        font-size:50px;
+    }
+}
+@media(max-width: 300px)
+{
+    .draw{
+        font-size:30px;
+    }
+}
+
+/* This is for animation of the event */
 @keyframes modalopen
 {
     from
