@@ -38,13 +38,14 @@ body
 .restart-btn
 {
     display: none;
-    background: var(--light-color);
+    background: #913d85;
     color: #333;
     padding: 0.4rem 1.3rem;
     font-size: 1rem;
     cursor: pointer;
     outline: none;
     border: none;
+    margin: 10px;
 }
 
 .restart-btn
